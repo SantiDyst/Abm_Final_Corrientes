@@ -13,6 +13,10 @@ h1{font-size:27px;letter-spacing:-.7px;font-weight:650;margin:0}h2{font-size:17p
 .meta{color:var(--muted);font-size:12px}
 .tabs{display:flex;gap:8px}
 .tabs button[aria-pressed=true]{background:#2f5d8a;color:#fff;border-color:#2f5d8a}
+.topactions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+.btn-link{display:inline-block;text-decoration:none;border:1px solid #b8c7d8;border-radius:5px;padding:8px 12px;background:#f4f7fb;color:#2b5478}
+.btn-link:hover{background:#e0e9f2}
 .panel{border:1px solid var(--line);border-radius:10px;margin:16px 0;background:#f5f8fb;overflow:hidden}
 .filters-panel{padding:18px;background:#e2e9f2}
 label{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin:0 0 7px}
@@ -67,10 +71,16 @@ td{padding:12px 14px;vertical-align:top;border-bottom:1px solid #dfe6ee;line-hei
 <body><main>
 <header class="topbar">
   <h1>ABM Corrientes 2026</h1>
-  <nav class="tabs" aria-label="Secciones">
-    <button id="tabConsulta" type="button" aria-pressed="true">Consulta</button>
-    <button id="tabAltas" type="button" aria-pressed="false">Altas</button>
-  </nav>
+  <div class="topactions">
+    <nav class="tabs" aria-label="Secciones">
+      <button id="tabConsulta" type="button" aria-pressed="true">Consulta</button>
+      <button id="tabAltas" type="button" aria-pressed="false">Altas</button>
+    </nav>
+    <div class="links">
+      <a class="btn-link" href="https://santidyst.github.io/aux_catalogo/" target="_blank" rel="noopener">Ver catálogo de puestos</a>
+      <a class="btn-link" href="https://santidyst.github.io/juri_map-/" target="_blank" rel="noopener">Mapa general</a>
+    </div>
+  </div>
 </header>
 
 <section id="viewConsulta">
